@@ -7,9 +7,11 @@ verify_ssl = true
 
 [packages]
 tornado = "*"
+fastapi = "*"
+uvicorn = "*"
 
 [requires]
 python_version = "3.7"
 
 [scripts]
-dev = "python src/server.py"
+dev = "uvicorn main:app --reload"
