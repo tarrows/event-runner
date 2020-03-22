@@ -28,4 +28,5 @@ class Solver:
     """
     solve Ax >= y
     """
-    pass
+    def solve(self):
+        pass
