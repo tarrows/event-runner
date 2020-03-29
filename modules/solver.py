@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from typing import Dict
+from typing import Dict, List
 
 
 @dataclass
@@ -23,10 +23,14 @@ class Reward:
     require: int
 
 
-@dataclass
 class Solver:
     """
     solve Ax >= y
     """
     def solve(self):
+        pass
+
+    @classmethod
+    def from_items(cls, materials: List[Material], quests: List[Quest], rewards: List[Reward]):
+        """create solver with varidation"""
         pass
